@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700');
+
+*{
+	box-sizing: border-box; 
+}
+
+
+
+.container3 ul li a:hover{
+	text-decoration: none;
+}
+
+
+/* desktop screens */
+@media (min-width: 1024px){
+	.container1{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: white;
+	font-family: 'Amatic SC', cursive;
+	}
+
+	.container1 p{
+		float: left;
+		font-size: 50px;
+	}
+
+	.container2{
+		padding-left: 0;
+		padding-right: 0;
+		position: relative;
+		width: 100%;
+		display: block;
+	}	
+
+	.container2 img{
+		display: block;
+	  	width: 100%;
+	  	height: 50%;
+	  	margin: auto;
+	}
+
+	.mynav{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		width: 100%;
+		height: auto;
+	}
+
+	.mynav li{
+		list-style: none;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		padding-right: 1%;
+		padding-left: 1%;
+		list-style-type: none;
+	}
+
+	.mynav li a{
+		font-size: 5rem;
+		color: black;
+		font-family: 'Amatic SC', cursive;
+	}
+
+	.body-title{
+		text-align: center;
+		font-size: 5rem;
+		margin: 2% 0 2% 0;
+		font-weight: bold;
+	}
+
+	.body{
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+
+	.body div{
+		text-align: center;
+	}
+
+	.body div object{
+		width: 20rem;
+		height: auto;
+	}
+
+}
+
+/* medium devices screens */
+@media (min-width: 768px){
+
+}
