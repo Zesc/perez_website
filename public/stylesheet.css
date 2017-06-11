@@ -10,6 +10,10 @@
 	text-decoration: none;
 }
 
+.footer{
+	background-color: #1f2733;
+	color: white;
+}
 
 /* desktop screens */
 @media (min-width: 1024px){
@@ -20,6 +24,7 @@
 	height: auto;
 	background-color: white;
 	font-family: 'Amatic SC', cursive;
+	font-weight: 700;
 	}
 
 	.container1 p{
@@ -63,13 +68,27 @@
 		font-size: 5rem;
 		color: black;
 		font-family: 'Amatic SC', cursive;
+		font-weight: 700;
+		transition: color .3s;
+	}
+
+	.mynav li a:hover{
+		color: #f25829;
+		cursor: pointer;
 	}
 
 	.body-title{
+		width: 100%;
+	}
+
+	.body-title h2{
+		width: 35%;
 		text-align: center;
-		font-size: 5rem;
-		margin: 2% 0 2% 0;
-		font-weight: bold;
+		font-size: 6rem;
+		border-bottom: 1px solid black;
+		margin: 2% auto 2% auto;
+		font-weight: 500;
+		padding-bottom: 1%;
 	}
 
 	.body{
@@ -87,6 +106,40 @@
 		height: auto;
 	}
 
+	.footer{
+		height: auto;
+		text-align: center;
+	}
+
+	.footer-p{
+		margin: 0 0 0 0;
+		color: #53555b;
+		padding: 1%;
+		font-family: cursive;
+	}
+
+	.footer-p span{
+		color:white;
+		opacity: .9;
+		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;;
+	}
+
+	.footer-nav{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		list-style-type: none;
+	}
+
+	.footer-nav li{
+		padding: 0 1% 0 1%;
+	}
+
+	#footer-title{
+		font-size: 4rem;
+		font-family: 'Amatic SC', cursive;
+		font-weight: 500;
+	}
 }
 
 /* medium devices screens */
