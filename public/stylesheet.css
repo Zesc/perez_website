@@ -24,7 +24,7 @@
 
 
 /* medium screen devices*/
-@media (min-width: 768px){
+/*@media (min-width: 768px){
 	.container2{
 		position: relative;
 		width: 100%;
@@ -35,10 +35,10 @@
 	  	width: 100%;
 	  	height: auto;
 	}
-}
+}*/
 
 /* desktop screens */
-@media (min-width: 1024px){
+@media screen and (min-width: 900px){
 	.header{
 		display: block;
 		background-color: white;
@@ -47,7 +47,7 @@
 
 	.container1 img{
 		margin-top: 8%;
-		margin-bottom: 8%;
+		margin-bottom: 3%;
 		margin-left: 15%;
 	}
 
@@ -57,7 +57,7 @@
 		width: 100%;
 		height: auto;
 		padding: 0;
-		margin: 0;
+		margin: 0 0 0 0;
 	}	
 
 	.container2 img{
@@ -70,7 +70,7 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-end;
-		margin-top: 7%;
+		margin-top: 9%;
 		margin-right: 5%;
 	}
 
@@ -96,35 +96,63 @@
 		border-radius: 5px;
 	}
 
-	.body-title{
+	.body-description{
 		display: block;
-		width: 100%;
 	}
 
-	.body-title h2{
-		width: 20%;
-		text-align: center;
-		font-size: 4rem;
-		border-bottom: 1px solid black;
-		margin: 2% auto 2% auto;
-		font-weight: 300;
-		padding-bottom: .5%;
+	.body-description div img{
+		width: 40%;
+		margin: 15% 0 20% 55%;
+	}
+
+	.body-description div p{
 		font-family: 'Roboto', sans-serif;
+		font-weight: 400;
+		font-size: 1.3em;
+		margin: 25% 0 20% 0;
+		padding-right: 10%;
 	}
 
 	.body{
 		width: 100%;
 		height: auto;
 		display: block;
+		background-color: rgb(234, 240, 242);
+		padding: 5% 0 5% 0;
+	}
+
+	.body-title{
+		margin: 0 0 5% 0;
+	}
+
+	.body-title h2{
+		font-family: 'Roboto', sans-serif;
+		font-weight: 300;
+		font-size: 4em;
+		border-bottom: 1px black solid;
+		width: 30%;
+		margin: auto auto;
 	}
 
 	.body div{
 		text-align: center;
+		padding: 0;
 	}
 
-	.body div object{
-		width: 20rem;
-		height: auto;
+	#svg-img{
+		width: 45%;	
+	}
+
+	.body div p{
+		font-family:  'Roboto', sans-serif;
+		font-weight: 400;
+		margin-top: 10%;
+		font-size: 1.3em;
+	}
+
+	#customer-review-title h2{
+		width: 35%;
+		text-align: center;
 	}
 
 	.footer{
