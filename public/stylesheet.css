@@ -87,6 +87,7 @@
 		transition: background-color .3s, color .3s;
 		font-family: 'Roboto', sans-serif;
 		padding: 7px 10px;
+		border-radius: 5px;
 	}
 
 	.mynav li a:hover{
@@ -121,6 +122,18 @@
 		padding: 5% 0 5% 0;
 	}
 
+	.body div{
+		text-align: center;
+		padding: 0;
+	}
+
+	.body div p{
+		font-family:  'Roboto', sans-serif;
+		font-weight: 400;
+		margin-top: 10%;
+		font-size: 1.3em;
+	}
+
 	.body-title{
 		margin: 0 0 5% 0;
 	}
@@ -134,25 +147,66 @@
 		margin: auto auto;
 	}
 
-	.body div{
-		text-align: center;
-		padding: 0;
+	.body-review-section{
+		width: 100%;
+		height: auto;
+		display: block;
+		padding: 5% 0 5% 0;
 	}
 
 	#svg-img{
 		width: 45%;	
 	}
 
-	.body div p{
-		font-family:  'Roboto', sans-serif;
-		font-weight: 400;
-		margin-top: 10%;
-		font-size: 1.3em;
-	}
-
 	#customer-review-title h2{
 		width: 35%;
 		text-align: center;
+	}
+
+	.personal-review{
+		width: 40%;
+		margin: auto auto;
+		margin-top: 7%;
+
+	}
+
+	.personal-review blockquote{
+		font-family: Georgia, serif;
+		font-size: 18px;
+		font-style: italic;
+		position: relative;
+		border-left: 0 solid white;
+
+	}
+
+	.personal-review blockquote::before{
+		display: block;
+		content: "\201C";
+		font-size: 80px;
+		position: absolute;
+		left: -20px;
+		top: -30px;
+	}
+
+	.personal-review blockquote::after{
+		display: block;
+		content: "\201D";
+		font-size: 80px;
+		position: absolute;
+		right: -20px;
+		bottom: -20px;
+	}
+
+	.personal-review blockquote cite{
+		font-size: 17px;
+		display: block;
+		margin-top: 5px;
+		text-align: right;
+	}
+
+	.personal-review blockquote cite::before{
+		content: "\2014 \2009";
+
 	}
 
 	.footer{
@@ -164,13 +218,11 @@
 		margin: 0 0 0 0;
 		color: #53555b;
 		padding: 1%;
-		font-family: cursive;
 	}
 
 	.footer-p span{
 		color:white;
 		opacity: .9;
-		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;;
 	}
 
 	.footer-nav{
@@ -186,7 +238,6 @@
 
 	#footer-title{
 		font-size: 4rem;
-		font-family: 'Amatic SC', cursive;
 		font-weight: 500;
 	}
 }
