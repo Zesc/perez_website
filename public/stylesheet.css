@@ -99,6 +99,7 @@
 
 	.body-description{
 		display: block;
+		margin: 0;
 	}
 
 	.body-description div img{
@@ -167,9 +168,7 @@
 		width: 40%;
 		margin: auto auto;
 		margin-top: 7%;
-
 	}
-
 	.personal-review blockquote{
 		font-family: Georgia, serif;
 		font-size: 18px;
@@ -236,8 +235,29 @@
 		padding: 0 1% 0 1%;
 	}
 
+	.footer-nav li a{
+		text-decoration: none;
+		color: rgba(255,255,255,0.5);
+		transition: color .3s;
+	}
+
+	.footer-nav li a:hover{
+		color: #96f4c9;
+	}
+
 	#footer-title{
 		font-size: 4rem;
-		font-weight: 500;
+		font-weight: 300;
+	}
+
+	/* contact page */
+	.contact-title{
+		width: 100%;
+		height: auto;
+		text-align: center;
+	}
+
+	.contact-title h1{
+		
 	}
 }
