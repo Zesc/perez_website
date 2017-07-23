@@ -8,11 +8,6 @@
 	background-color: #1f2733;
 }
 
-/*.container1 p{
-	font-family: 
-}*/
-
-
 .container3 ul li a:hover{
 	text-decoration: none;
 }
@@ -20,6 +15,10 @@
 .footer{
 	background-color: #1f2733;
 	color: white;
+}
+
+.odd{
+	background-color: rgb(234, 240, 242);
 }
 
 
@@ -121,6 +120,7 @@
 		display: block;
 		background-color: rgb(234, 240, 242);
 		padding: 5% 0 5% 0;
+		margin: 0;
 	}
 
 	.body div{
@@ -251,13 +251,59 @@
 	}
 
 	/* contact page */
-	.contact-title{
+	.contact{
+		display: block;sss
 		width: 100%;
 		height: auto;
 		text-align: center;
 	}
 
-	.contact-title h1{
-		
+	.contact-container{
+		margin: 5% 0 5% 0;
+	}
+
+	.contact-container div{
+		padding: 2%;
+	}
+
+	#custom-div{
+		margin-top: 9%;
+	}
+
+	#map{
+		width: 100%;
+		height: 400px;
+	}
+
+	.custom-p{
+		font-family: 'Roboto', sans-serif;
+		font-weight: 300;
+		font-size: 1.6em;
+		padding: 2.5% 0 2.5% 0;
+	}
+
+	.img-contact-section1{
+		width: 10%;
+	}
+
+	.media-section{
+		display: block;
+		width: 100%;
+		height: auto;
+		margin: 0 0 2.5% 0;
+	}
+
+	.img-contact-section2{
+		width: 4%;
+		margin: -2% 1% 0 1%;
+		transition: width .3s;
+	}
+
+	.media-section a{
+		text-decoration: none;
+	}
+
+	.media-section a:hover .img-contact-section2{
+		width: 5%;
 	}
 }
