@@ -4,6 +4,20 @@
 	box-sizing: border-box; 
 }
 
+/* helpers */
+.odd{
+	background-color: rgb(234, 240, 242);
+}
+
+.underline{
+	border-bottom: 1px solid black;
+}
+
+.center{
+	text-align: center;
+}
+
+/**/
 .header{
 	background-color: #1f2733;
 }
@@ -15,10 +29,6 @@
 .footer{
 	background-color: #1f2733;
 	color: white;
-}
-
-.odd{
-	background-color: rgb(234, 240, 242);
 }
 
 
@@ -296,7 +306,7 @@
 	.img-contact-section2{
 		width: 4%;
 		margin: -2% 1% 0 1%;
-		transition: width .3s;
+		transition: width .2s;
 	}
 
 	.media-section a{
@@ -304,6 +314,91 @@
 	}
 
 	.media-section a:hover .img-contact-section2{
-		width: 5%;
+		width: 4.4%;
 	}
+
+	/* service section */
+	.service-container1, .service-container2{
+		width: 100%;
+		height: auto;
+		padding: 3%;
+	}
+
+	.service-container1 > p{
+		width: 35%;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 300;
+		font-size: 1.6em;
+		margin-bottom: 0;
+		margin: auto auto;
+		padding-bottom: 1%;
+	}
+
+	.div-svg, .div-svg2{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-end;
+		align-items: center;
+		align-content: center;
+	}
+
+	.div-svg > svg{
+		width: 9%;
+	}
+
+	.div-svg > p, .div-svg2 > p{
+		margin: 0;
+		padding-left: 1%;
+		font-family: 'Roboto', sans-serif;
+		font-size: 1.6em;
+		font-weight: 300;
+
+	}
+
+	.div-svg2{
+		justify-content: flex-start;
+		height: 10%;
+		padding: 2% 0 2% 0;
+	}
+
+	.div-svg2 > svg{
+		float: left;
+		width: 4%;
+		height: 20px;
+	}
+
+	.contact-button{
+		margin-top: 2%;
+		text-align: center;
+	}
+
+	.contact-button a{
+		border: 2px solid black;
+		padding: 1% 2% 1% 2%;
+		text-align: center;
+		font-weight: 300;
+		font-size: 1.6em;
+		font-family: 'Roboto', sans-serif;
+		border-radius: 4px;
+		color: black;
+		transition: color .3s, border .3s;
+	}
+
+	.contact-button a:hover{
+		text-decoration: none;
+		color: #96f4c9;
+		border: 2px solid #96f4c9;
+
+	}
+
+	.underline{
+		border-bottom: 1px solid black;
+	}
+
+	.center{
+		text-align: center;
+	}
+
+	
 }
