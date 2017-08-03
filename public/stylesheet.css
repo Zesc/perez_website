@@ -36,6 +36,126 @@
 	text-align: center;
 }
 
+/* Index Section */
+.container2{
+		display: block;
+		position: relative;
+		width: 100%;
+		height: auto;
+		padding: 0;
+		margin: 0 0 0 0;
+}
+
+.body-description{
+	width: 100%;
+	display: block;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+#img-vicenta{
+	width: 50%;
+	margin: auto;
+	margin-top: 8%;
+	margin-bottom: 3%;
+}
+
+#img-vicenta-desc{
+	text-align: center;
+	font-size: 1.2em;
+	padding: 4% 5%;
+}
+
+.body{
+	width: 100%;
+	height: auto;
+	display: block;
+	background-color: rgb(234, 240, 242);
+	padding: 5% 0 5% 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.body-title h2, #customer-review-title h2{
+	text-align: center;
+	width: 50%;
+	border-bottom: 1px solid black;
+	margin: auto;
+	font-weight: 400;
+	font-size: 2.8em;
+}
+
+.body div{
+	margin: 8% 0 8% 0;
+}
+
+.body div img{
+	width: 35%;
+	margin: auto;
+}
+
+.body div p{
+	margin: auto;
+	font-weight: 300;
+	font-size: 1.2em;
+	text-align: center;
+	margin-top: 2%;
+}
+
+.body-review-section{
+	width: 100%;
+	height: auto;
+	display: block;
+	padding: 10% 0 5% 0;
+}
+
+/* Customer review section*/
+#customer-review-title h2{
+	width: 87%;
+}
+
+.personal-review{
+	width: 80%;
+	margin: auto;
+	margin-top: 10%;
+}
+.personal-review blockquote{
+	font-family: Georgia, serif;
+	font-size: 1.1em;
+	font-style: italic;
+	position: relative;
+	border-left: 0 solid white;
+
+}
+
+.personal-review blockquote::before{
+	display: block;
+	content: "\201C";
+	font-size: 70px;
+	position: absolute;
+	left: -20px;
+	top: -30px;
+}
+
+.personal-review blockquote::after{
+	display: block;
+	content: "\201D";
+	font-size: 70px;
+	position: absolute;
+	right: -20px;
+	bottom: -20px;
+}
+
+.personal-review blockquote cite{
+	font-size: 17px;
+	display: block;
+	margin-top: 5px;
+	text-align: right;
+}
+
+.personal-review blockquote cite::before{
+	content: "\2014 \2009";
+}
 
 /* Footer section*/
 .footer{
@@ -121,81 +241,55 @@
 		width: 100%;
 		height: auto;
 		padding: 0;
-		margin: 0 0 0 0;
+		margin: 0;
 	}	
 
 	.container2 img{
 		width: 100%;
-	  	padding: 0;
-	  	margin: 0;
 	}
 
-	.body-description{
-		display: block;
-		margin: 0;
-	}
-
-	.body-description div img{
+	#img-vicenta{
 		width: 40%;
-		margin: 15% 0 20% 55%;
+		margin: auto;
+		float: right;
+		margin-top: 19%;
 	}
 
-	.body-description div p{
-		font-family: 'Roboto', sans-serif;
-		font-weight: 400;
-		font-size: 1.3em;
+	#img-vicenta-desc{
+		font-size: 1.5em;
 		margin: 25% 0 20% 0;
-		padding-right: 10%;
-	}
-
-	.body{
-		width: 100%;
-		height: auto;
-		display: block;
-		background-color: rgb(234, 240, 242);
-		padding: 5% 0 5% 0;
-		margin: 0;
 	}
 
 	.body div{
+		margin: 3% 0 3% 0;
 		text-align: center;
-		padding: 0;
 	}
 
 	.body div p{
-		font-family:  'Roboto', sans-serif;
-		font-weight: 400;
-		margin-top: 10%;
-		font-size: 1.3em;
+		font-size: 1.5em;
+		margin-top: 2%;
 	}
 
-	.body-title{
-		margin: 0 0 5% 0;
+	.body div img{
+ 		width: 45%
 	}
 
 	.body-title h2{
-		font-family: 'Roboto', sans-serif;
-		font-weight: 300;
+		font-weight: 400;
 		font-size: 4em;
 		border-bottom: 1px black solid;
-		width: 30%;
-		margin: auto auto;
+		width: 25%;
+		margin: auto;
 	}
 
+	/* Customer review section*/
 	.body-review-section{
-		width: 100%;
-		height: auto;
-		display: block;
 		padding: 5% 0 5% 0;
-	}
-
-	#svg-img{
-		width: 45%;	
 	}
 
 	#customer-review-title h2{
 		width: 35%;
-		text-align: center;
+		font-size: 4em;
 	}
 
 	.personal-review{
@@ -204,42 +298,15 @@
 		margin-top: 7%;
 	}
 	.personal-review blockquote{
-		font-family: Georgia, serif;
 		font-size: 18px;
-		font-style: italic;
-		position: relative;
-		border-left: 0 solid white;
-
 	}
 
 	.personal-review blockquote::before{
-		display: block;
-		content: "\201C";
 		font-size: 80px;
-		position: absolute;
-		left: -20px;
-		top: -30px;
 	}
 
 	.personal-review blockquote::after{
-		display: block;
-		content: "\201D";
 		font-size: 80px;
-		position: absolute;
-		right: -20px;
-		bottom: -20px;
-	}
-
-	.personal-review blockquote cite{
-		font-size: 17px;
-		display: block;
-		margin-top: 5px;
-		text-align: right;
-	}
-
-	.personal-review blockquote cite::before{
-		content: "\2014 \2009";
-
 	}
 
 	/* Footer section */
