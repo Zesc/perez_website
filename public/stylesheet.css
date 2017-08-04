@@ -46,6 +46,10 @@
 		margin: 0 0 0 0;
 }
 
+.row{
+	margin: 0;
+}
+
 .body-description{
 	width: 100%;
 	display: block;
@@ -54,7 +58,7 @@
 }
 
 #img-vicenta{
-	width: 50%;
+	width: 60%;
 	margin: auto;
 	margin-top: 8%;
 	margin-bottom: 3%;
@@ -62,8 +66,10 @@
 
 #img-vicenta-desc{
 	text-align: center;
-	font-size: 1.2em;
-	padding: 4% 5%;
+	font-size: 1.4em;
+	margin: auto;
+	margin-bottom: 7%;
+	padding: 0 2% 0 2%;
 }
 
 .body{
@@ -97,7 +103,7 @@
 .body div p{
 	margin: auto;
 	font-weight: 300;
-	font-size: 1.2em;
+	font-size: 1.4em;
 	text-align: center;
 	margin-top: 2%;
 }
@@ -257,7 +263,8 @@
 
 	#img-vicenta-desc{
 		font-size: 1.5em;
-		margin: 25% 0 20% 0;
+		margin: 25% 0 25% 0;
+		padding: 0 3% 0 3%;
 	}
 
 	.body div{
