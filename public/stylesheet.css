@@ -9,14 +9,6 @@
 	background-color: rgb(234, 240, 242);
 }
 
-.underline{
-	border-bottom: 1px solid black;
-}
-
-.center{
-	text-align: center;
-}
-
 /* mobile screen */
 .navbar {
 	margin: 0;
@@ -161,6 +153,88 @@
 
 .personal-review blockquote cite::before{
 	content: "\2014 \2009";
+}
+
+/* Service section */
+.service-container1, .service-container2{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	width: 100%;
+	height: auto;
+	padding: 5% 0 5% 0;
+}
+
+.service-container1 > p{
+	width: 80%;
+	border-bottom: 1px solid black;
+	text-align: center;
+	font-size: 1.4em;
+	line-height: 1;
+	margin: 5% auto 5% auto;
+	padding-bottom: .5%;
+}
+
+.div-svg{
+	/*width: 100%;*/
+	text-align: center;
+}
+
+.div-svg > svg{
+	width: 20%;
+	height: 70px;
+}
+
+.div-svg > p{
+	font-size: 3em;
+	font-weight: 400;
+	border-bottom: 1px solid black;
+	width: 75%;
+	margin: 2% auto 11% auto; 
+}
+
+.div-svg2{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+	height: auto;
+	padding: 0 20% 0 20%;
+}
+
+.div-svg2 > svg{
+	width: 12%;
+	height: 50px;
+	padding: 0 2% 0 0;
+}
+
+.div-svg2 > p{
+	font-size: 1.4em;
+}
+
+#center-p{
+	text-align: center;
+	margin: 3% auto 5% auto;
+	font-size: 1.4em;
+}
+
+.contact-button{
+	text-align: center;
+	margin-top: 7%;
+	margin-bottom: 5%;
+}
+
+.contact-button a{
+	border: 2px solid #96f4c9;
+	padding: 1% 2% 1% 2%;
+	text-align: center;
+	font-weight: 300;
+	font-size: 1.6em;
+	font-family: 'Roboto', sans-serif;
+	border-radius: 4px;
+	color: #96f4c9;
+	transition: color .3s, border .3s;
 }
 
 /* Footer section*/
@@ -409,19 +483,19 @@
 
 	/* service section */
 	.service-container1, .service-container2{
-		width: 100%;
-		height: auto;
-		padding: 3%;
+		padding: 1%;
 	}
 
 	.service-container1 > p{
 		width: 35%;
 		font-family: 'Roboto', sans-serif;
-		font-weight: 300;
-		font-size: 1.6em;
-		margin-bottom: 0;
-		margin: auto auto;
-		padding-bottom: 1%;
+		font-size: 1.9em;
+		line-height: 1.2;
+		padding-bottom: .5%;
+	}
+
+	.div-svg{
+		margin-top: 7%;
 	}
 
 	.div-svg, .div-svg2{
@@ -437,8 +511,14 @@
 		width: 9%;
 	}
 
-	.div-svg > p, .div-svg2 > p{
+	.div-svg > p{
+		border-bottom: none;
 		margin: 0;
+		width: 25%;
+	}
+
+
+	.div-svg > p, .div-svg2 > p{
 		padding-left: 1%;
 		font-family: 'Roboto', sans-serif;
 		font-size: 1.6em;
@@ -448,29 +528,22 @@
 
 	.div-svg2{
 		justify-content: flex-start;
-		height: 10%;
-		padding: 2% 0 2% 0;
+		padding: 1% 0 1% 0;
 	}
 
 	.div-svg2 > svg{
 		float: left;
-		width: 4%;
-		height: 20px;
+		width: 15%;
+		height: 30px;
 	}
 
 	.contact-button{
-		margin-top: 2%;
-		text-align: center;
+		margin-top: 0;
+		margin-bottom: 5%;
 	}
 
 	.contact-button a{
-		border: 2px solid black;
-		padding: 1% 2% 1% 2%;
-		text-align: center;
-		font-weight: 300;
-		font-size: 1.6em;
-		font-family: 'Roboto', sans-serif;
-		border-radius: 4px;
+		border: 1px solid black;
 		color: black;
 		transition: color .3s, border .3s;
 	}
@@ -479,15 +552,15 @@
 		text-decoration: none;
 		color: #96f4c9;
 		border: 2px solid #96f4c9;
+	}
 
+	#center-p{
+		font-size: 1.9em;
+		margin: 3% auto 3% auto;
 	}
 
 	.underline{
 		border-bottom: 1px solid black;
-	}
-
-	.center{
-		text-align: center;
 	}
 
 	/* about section */
