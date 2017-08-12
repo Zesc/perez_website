@@ -649,25 +649,23 @@
 		height: 30px;
 	}
 
-	.div-svg2 > svg:hover{
-		fill: green;
-	}
-
 	.contact-button{
 		margin-top: 0;
 		margin-bottom: 5%;
 	}
 
 	.contact-button a{
-		border: 1px solid black;
-		color: black;
-		transition: color .3s, border .3s;
+		border: 1px solid #96f4c9;
+		color: #96f4c9;
+		background-color: rgb(234, 240, 242);
+		transition: color .3s, border .3s, background-color .3s;
 	}
 
 	.contact-button a:hover{
 		text-decoration: none;
-		color: #96f4c9;
+		color: white;
 		border: 2px solid #96f4c9;
+		background-color: #96f4c9;
 	}
 
 	#center-p{
