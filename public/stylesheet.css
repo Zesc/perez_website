@@ -28,6 +28,10 @@
 	text-align: center;
 }
 
+.navbar-default .navbar-nav > li > a {
+	color: #1f2733;
+}
+
 /* Index Section */
 .container2{
 		display: block;
@@ -76,11 +80,11 @@
 
 .body-title h2, #customer-review-title h2{
 	text-align: center;
-	width: 50%;
+	width: 45%;
 	border-bottom: 1px solid black;
 	margin: auto;
 	font-weight: 400;
-	font-size: 2.8em;
+	font-size: 2.5em;
 }
 
 .body div{
@@ -98,6 +102,12 @@
 	font-size: 1.4em;
 	text-align: center;
 	margin-top: 2%;
+}
+
+.body div p a:active {
+	text-decoration: none;
+	color: #337ab7;
+	opacity: 0.5;
 }
 
 .body-review-section{
@@ -153,6 +163,24 @@
 
 .personal-review blockquote cite::before{
 	content: "\2014 \2009";
+}
+
+/* About me section */
+.about-container {
+	width: 100%;
+	text-align: center;
+}
+
+#about-img {
+	width: 40%;
+	height: auto;
+	margin: 5% 0 3% 0;
+}
+
+.about-container p {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 1.4em;
 }
 
 /* Service section */
@@ -233,8 +261,13 @@
 	font-size: 1.6em;
 	font-family: 'Roboto', sans-serif;
 	border-radius: 4px;
-	color: #96f4c9;
+	color: white;
+	background-color: #96f4c9;
 	transition: color .3s, border .3s;
+}
+
+.contact-button a:active{
+	text-decoration: none;
 }
 
 /* Contact me section */
@@ -244,20 +277,27 @@
 }
 
 #custom-p{
-	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
-	font-size: 1.4em;
+	font-weight: 400;
+	font-size: 1.5em;
 	text-align: center;
-	margin: 6% 0;
+	padding: 5% 0;
+	margin: 0;
 }
 
 .contact-container{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
 	text-align: center;
 	margin-bottom: 3%;
 }
 
-.contact-container div > svg{
+.contact-container div a > svg, .contact-container div svg{
 	width: 20%;
+	height: 100px;
+}
+
+.contact-container div p {
+	font-size: 1.3em;
 }
 
 .contact-container div iframe{
@@ -269,20 +309,30 @@
 	text-align: center;
 	font-family: "Roboto", sans-serif;
 	font-weight: 300;
+	padding: 5% 2%;
 }
 
 .media-section p{
-	font-size: 1.4em;
+	font-size: 1.5em;
 }
 
 .media-section a{
-	margin-right: 5%;
+	margin: 0 2% 0 2%;
+	height: auto;
 }
 
-.media-section a svg{
+.media-section a svg { 
 	width: 10%;
 	height: 50px;
 
+}
+
+.media-section a#yp{
+	color: #d32323;
+}
+
+.media-section a#fb{
+	color: #365899;
 }
 
 /* Footer section*/
@@ -310,12 +360,16 @@
 
 .footer-nav ul{
 		display: flex;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
 		flex-direction: column;
 		justify-content: center;
 }
 
 .footer-nav ul{
 	list-style-type: none;
+	-webkit-padding-start: 0;
 }
 
 .footer-nav li{
@@ -450,6 +504,10 @@
 
 	.footer-nav ul{
 		display: flex;
+		display: -webkit-box; 
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex; 
 		flex-direction: row;
 		justify-content: center;
 		list-style-type: none;
@@ -480,23 +538,27 @@
 		text-align: center;
 	}
 
-	.contact-container{
-		/*margin: 5% 0 5% 0;*/
+	.contact-container div{
+		padding: 5% 2%;
 	}
 
-	.contact-container div{
-		/*padding: 2%;*/
+	.contact-container div p{
+		font-size: 1.5em;
+	}
+
+	.contact-container div iframe{
+		height: 300px;
 	}
 
 	#map{
-		height: 400px;
+		height: 350px;
 	}
 
 	#custom-p{
-		font-family: 'Roboto', sans-serif;
-		font-weight: 300;
-		font-size: 1.6em;
-		padding: 2.5% 0 2.5% 0;
+		font-weight: 400;
+		font-size: 2.5em;
+		margin: 0;
+		padding: 5% 0;
 	}
 
 	.img-contact-section1{
@@ -507,21 +569,28 @@
 		display: block;
 		width: 100%;
 		height: auto;
-		margin: 0 0 2.5% 0;
-	}
-
-	.img-contact-section2{
-		width: 4%;
-		margin: -2% 1% 0 1%;
-		color: grey;
 	}
 
 	.media-section a{
 		text-decoration: none;
+		height: 50px;
 	}
 
-	.media-section a:hover .img-contact-section2{
-		color: red;
+	.media-section a#yp, .media-section a#fb{
+		color: #1f2733;
+	}
+
+	.media-section a#yp:hover{
+		color: #d32323;
+	}
+
+	.media-section a#fb:hover{
+		color: #365899;
+	}
+
+	.media-section a svg{
+		width: 50px;
+		margin-top: 3%;
 	}
 
 	/* service section */
