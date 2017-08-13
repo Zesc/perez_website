@@ -110,6 +110,10 @@
 	opacity: 0.5;
 }
 
+.body div p a:focus {
+	text-decoration: none;
+}
+
 .body-review-section{
 	width: 100%;
 	height: auto;
@@ -184,7 +188,7 @@
 }
 
 /* Service section */
-.service-container1, .service-container2{
+.service-container1, .service-container2, .service-container3 {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	width: 100%;
@@ -192,15 +196,20 @@
 	padding: 5% 0 5% 0;
 }
 
-.service-container1 > p{
-	width: 80%;
-	border-bottom: 1px solid black;
+.service-container1 > p, .service-container3 > p {
+	width: 90%;
 	text-align: center;
 	font-size: 1.4em;
-	line-height: 1;
-	margin: 5% auto 5% auto;
+	margin: 3% auto 3% auto;
 	padding-bottom: .5%;
+	border-bottom: 1px solid black;
 }
+
+.service-container3 > p {
+	border-bottom: none;
+}
+
+
 
 .div-svg{
 	/*width: 100%;*/
@@ -241,12 +250,6 @@
 	font-size: 1.4em;
 }
 
-#center-p{
-	text-align: center;
-	margin: 3% auto 5% auto;
-	font-size: 1.4em;
-}
-
 .contact-button{
 	text-align: center;
 	margin-top: 7%;
@@ -267,6 +270,10 @@
 }
 
 .contact-button a:active{
+	text-decoration: none;
+}
+
+.contact-button a:focus {
 	text-decoration: none;
 }
 
@@ -453,6 +460,12 @@
 		margin-top: 2%;
 	}
 
+	.body div p a:hover {
+		text-decoration: none;
+		color: #337ab7;
+		opacity: .5;
+	}
+
 	.body div img{
  		width: 45%
 	}
@@ -594,16 +607,15 @@
 	}
 
 	/* service section */
-	.service-container1, .service-container2{
+	.service-container1, .service-container2, .service-container3 {
 		padding: 1%;
+		font-family: 'Roboto', sans-serif;
 	}
 
-	.service-container1 > p{
-		width: 35%;
-		font-family: 'Roboto', sans-serif;
+	.service-container1 > p, .service-container3 > p {
+		width: 50%;
 		font-size: 1.9em;
 		line-height: 1.2;
-		padding-bottom: .5%;
 	}
 
 	.div-svg{
@@ -666,11 +678,6 @@
 		color: white;
 		border: 2px solid #96f4c9;
 		background-color: #96f4c9;
-	}
-
-	#center-p{
-		font-size: 1.9em;
-		margin: 3% auto 3% auto;
 	}
 
 	.underline{
